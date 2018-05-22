@@ -1,9 +1,5 @@
 import pickle
 import xml.sax
-from nltk.stem.wordnet import WordNetLemmatizer
-
-lem=WordNetLemmatizer()
-
 
 sentic=pickle.load(open('sentic_dump.p','rb'))
 sentence=pickle.load(open('sentence_dump.p','rb'))
@@ -29,71 +25,71 @@ def extractor(words = {}, sid=0):
         hasNsubj = findNsubj(words)
         if(hasNsubj):
             for word in words.keys():
-                    if(not words[lem.lemmatize(word)].has_key("nsubj")):
+                    if(not words[word].has_key("nsubj")):
                         continue
-	        #if words[lem.lemmatize(word)].has_key("nsubj"):
+	        #if words[word].has_key("nsubj"):
                     #Point 1
-                    if (words[lem.lemmatize(word)]["pos_tag"] in verb and checkModifiers(words, word)):
+                    if (words[word]["pos_tag"] in verb and checkModifiers(words, word)):
                         print "In 1"
                         print word
                         aspect_terms.append(word)
 			pol.append(word)
                     
                         #Point 3
-                    elif (not has_auiliary and words[lem.lemmatize(word)].has_key("dobj") and isNoun(words, words[lem.lemmatize(word)]["dobj"])):
-                            if (not wordInSentic(words[lem.lemmatize(word)]["dobj"])):
+                    elif (not has_auiliary and words[word].has_key("dobj") and isNoun(words, words[word]["dobj"])):
+                            if (not wordInSentic(words[word]["dobj"])):
                                 print "In 3a"
-                                print words[lem.lemmatize(word)]["dobj"]
-                                aspect_terms.append(words[lem.lemmatize(word)]["dobj"])
-				j = words[lem.lemmatize(word)]["dobj"]
+                                print words[word]["dobj"]
+                                aspect_terms.append(words[word]["dobj"])
+				j = words[word]["dobj"]
 				pol.append(j)
                             else:
                                 print "In 3b"
-                                print words[lem.lemmatize(word)]["dobj"]
-                                aspect_terms.append(words[lem.lemmatize(word)]["dobj"])
-				pol.append(words[lem.lemmatize(word)]["dobj"])
-                                word1 = getNounConnectedByAny(words, words[lem.lemmatize(word)]["dobj"])
+                                print words[word]["dobj"]
+                                aspect_terms.append(words[word]["dobj"])
+				pol.append(words[word]["dobj"])
+                                word1 = getNounConnectedByAny(words, words[word]["dobj"])
                                 if (word1):
                                     print word1
                                     aspect_terms.append(word1)
 				    pol.append(word1)
                         #point 2 
-                        #elif (words[lem.lemmatize(word)]["pos_tag"] in verb) and getAdverbOrAdjective(words, word):
+                        #elif (words[word]["pos_tag"] in verb) and getAdverbOrAdjective(words, word):
                     elif not has_auiliary and getAdverbOrAdjective(words, word) :
                             print "In 2"
-                            if(words[lem.lemmatize(word)].has_key("nsubj") and not ("DT" in words[lem.lemmatize(words[lem.lemmatize(word)]["nsubj"])]["pos_tag"])):
-                                print words[lem.lemmatize(word)]["nsubj"] + " "
-                                aspect_terms.append(words[lem.lemmatize(word)]["nsubj"])
-				pol.append(words[lem.lemmatize(word)]["nsubj"])
-                            #if(not ("DT" in words[lem.lemmatize(word)]["pos_tag"] or "PRP" in words[lem.lemmatize(word)]["pos_tag"])):
+                            if(words[word].has_key("nsubj") and not ("DT" in words[words[word]["nsubj"]]["pos_tag"])):
+                                print words[word]["nsubj"] + " "
+                                aspect_terms.append(words[word]["nsubj"])
+				pol.append(words[word]["nsubj"])
+                            #if(not ("DT" in words[word]["pos_tag"] or "PRP" in words[word]["pos_tag"])):
                             print word
                             aspect_terms.append(word)
 			    pol.append(word)
                         #Point 4
-                    elif not has_auiliary and (words[lem.lemmatize(word)].has_key("xcomp")):
+                    elif not has_auiliary and (words[word].has_key("xcomp")):
                             print "In 4"
-                            xcomp = words[lem.lemmatize(word)]["xcomp"]
+                            xcomp = words[word]["xcomp"]
                             word1 = getNounConnectedByAny(words, xcomp)
                             if(word1):
                                 print word1
                                 aspect_terms.append(word1)
 				pol.append(word1)
                     #Point 5 & 6 & 7
-                    elif(words[lem.lemmatize(word)].has_key("cop")):
+                    elif(words[word].has_key("cop")):
                         dep = getDependency(words, word)
-                        copv = words[lem.lemmatize(word)]["cop"]
-                        if(words[lem.lemmatize(word)]["pos_tag"] in noun):
+                        copv = words[word]["cop"]
+                        if(words[word]["pos_tag"] in noun):
                             print "In 5"
                             print word
                             aspect_terms.append(word)
 			    pol.append(word)
 
-                        if(words[lem.lemmatize(word)].has_key("nsubj") and  not ("DT" in words[lem.lemmatize(words[lem.lemmatize(word)]["nsubj"])]["pos_tag"] 
-                            or "PRP" in words[lem.lemmatize(words[lem.lemmatize(word)]["nsubj"])]["pos_tag"])):
+                        if(words[word].has_key("nsubj") and  not ("DT" in words[words[word]["nsubj"]]["pos_tag"] 
+                            or "PRP" in words[words[word]["nsubj"]]["pos_tag"])):
                             print "In 6"
-                            print words[lem.lemmatize(word)]["nsubj"]
-                            aspect_terms.append(words[lem.lemmatize(word)]["nsubj"])
-			    pol.append(words[lem.lemmatize(word)]["nsubj"])
+                            print words[word]["nsubj"]
+                            aspect_terms.append(words[word]["nsubj"])
+			    pol.append(words[word]["nsubj"])
                         if(dep):
                             print "In 7"
                             print dep
@@ -112,22 +108,22 @@ def extractor(words = {}, sid=0):
 		    pol.append(word)
                 elif(prepN):
                     print "In 9"
-                    if(words[lem.lemmatize(word)].has_key("appos")):
-                        print words[lem.lemmatize(word)]["appos"]
-                        aspect_terms.append(words[lem.lemmatize(word)]["appos"])
-			pol.append(words[lem.lemmatize(word)]["appos"])
+                    if(words[word].has_key("appos")):
+                        print words[word]["appos"]
+                        aspect_terms.append(words[word]["appos"])
+			pol.append(words[word]["appos"])
                     #else:
                     #    print word
                     print prepN
                     aspect_terms.append(prepN)
 		    pol.append(prepN)
-                elif(words[lem.lemmatize(word)].has_key("dobj")):
+                elif(words[word].has_key("dobj")):
                     print "In 10"
-                    tmp1 = words[lem.lemmatize(words[lem.lemmatize(word)]["dobj"])]["pos_tag"]
+                    tmp1 = words[words[word]["dobj"]]["pos_tag"]
                     if( not (("DT" in tmp1) or ("PRP" in tmp1))):
-                        print words[lem.lemmatize(word)]["dobj"]
-                        aspect_terms.append(words[lem.lemmatize(word)]["dobj"])
-			pol.append(words[lem.lemmatize(word)]["dobj"])
+                        print words[word]["dobj"]
+                        aspect_terms.append(words[word]["dobj"])
+			pol.append(words[word]["dobj"])
                  
         forpol.append(pol)
         pol=[]
@@ -135,64 +131,64 @@ def extractor(words = {}, sid=0):
 
 '''
             #point 4
-                elif (words[lem.lemmatize(word)]["pos_tag"] in verb) and (words[lem.lemmatize(word)].has_key("xcomp")):
-                    cC = words[lem.lemmatize(word)]["xcomp"] #clausalComplement
+                elif (words[word]["pos_tag"] in verb) and (words[word].has_key("xcomp")):
+                    cC = words[word]["xcomp"] #clausalComplement
                     if (isInOpinionlexicon(word)) and (isInOpinionlexicon(cC)):
                         prep = getProposition(words, cC)
                         if(prep and words[words[cC][prep]]["pos_tag"] in noun):
                             print words[cC][prep]
             #Point 5 & 6 & 7
-                elif (words[lem.lemmatize(word)]["pos_tag"] in adjective) and words[lem.lemmatize(word)].has_key("cop"):
-                    if(words[lem.lemmatize(word)].has_key("nsubj") and words[words[lem.lemmatize(word)]["nsubj"]]["pos_tag"] in noun):
+                elif (words[word]["pos_tag"] in adjective) and words[word].has_key("cop"):
+                    if(words[word].has_key("nsubj") and words[words[word]["nsubj"]]["pos_tag"] in noun):
                     #Point 6
-                        if(not words[lem.lemmatize(word)].has_key("xcomp")):
-                            print words[lem.lemmatize(word)]["nsubj"]
+                        if(not words[word].has_key("xcomp")):
+                            print words[word]["nsubj"]
                     #Point 7
                         else:
-                            print words[lem.lemmatize(word)]["xcomp"] + " " + word
+                            print words[word]["xcomp"] + " " + word
 	    else: 
                     #for word in words.keys():
             #Pont 8
                     prep = getProposition(words, word)
-                    if (words[lem.lemmatize(word)]["pos_tag"] in point2) and words[lem.lemmatize(word)].has_key("xcomp"):
-                        xcomp = words[lem.lemmatize(word)]["xcomp"]
+                    if (words[word]["pos_tag"] in point2) and words[word].has_key("xcomp"):
+                        xcomp = words[word]["xcomp"]
                         if(words[xcomp]["pos_tag"] in verb):
                             print xcomp
             #Pont 9
-                    elif prep and words[words[lem.lemmatize(word)][prep]]["pos_tag"] in noun:
+                    elif prep and words[words[word][prep]]["pos_tag"] in noun:
                         print word
             #Point 10
             '''
 def getVmodorXcomp(words={}, word=""):
-    for key in words[lem.lemmatize(word)].keys():
+    for key in words[word].keys():
         if((key == "vmod" or key == "xcomp")):
-            tmp =  words[lem.lemmatize(word)][key]
+            tmp =  words[word][key]
             if(words[tmp]["pos_tag"] in (adverb or adjective)):
                 return tmp
     return None
 
 def hasPropositionalNoun(words={}, word=""):
-    for key in words[lem.lemmatize(word)].keys():
+    for key in words[word].keys():
         if ("prep" in key):
-            tmp = words[lem.lemmatize(word)][key]
-            tmp=lem.lemmatize(tmp)
+            tmp = words[word][key]
             if(words[tmp]["pos_tag"] in noun):
                 return tmp
     return None
 
 def getAuxiliary(words={}):
     for word in words.keys():
-        for key in words[lem.lemmatize(word)]:
+        for key in words[word]:
             if("aux" == key):
                 return True
     return False
 
 def getDependency(words={}, word=""):
-    for key in words[lem.lemmatize(word)].keys():
+    for key in words[word].keys():
+        tmp = words[word][key]
         try:
             if(key != "xcomp"):
                 continue
-            if(words[lem.lemmatize(tmp)]["pos_tag"] in verb):
+            if(words[tmp]["pos_tag"] in verb):
                 return tmp
         except:
             continue
@@ -200,18 +196,18 @@ def getDependency(words={}, word=""):
 
 def findNsubj(words={}):
     for key in words.keys():
-        if(words[lem.lemmatize(key)].has_key("nsubj")):
+        if(words[key].has_key("nsubj")):
             return True
     return False
 
 def checkModifiers(words = {}, word=""):
     try:
-        tmp = words[lem.lemmatize(word)]["amod"]
+        tmp = words[word]["amod"]
         return wordInSentic(tmp)
     except:
         pass
     try:
-        tmp = words[lem.lemmatize(word)]["advmod"]
+        tmp = words[word]["advmod"]
         return wordInSentic(tmp)
     except:
         pass
@@ -220,18 +216,18 @@ def checkModifiers(words = {}, word=""):
 def getProposition(words = {}, word=""):
     if (word=="" or len(words)==0):
         return None
-    for i in words[lem.lemmatize(word)].keys():
+    for i in words[word].keys():
         if "prep" in i:
             return i
     return None
 
 def getAdverbOrAdjective(words = {}, word=""):
-    for key in words[lem.lemmatize(word)].keys():
-        tmp = words[lem.lemmatize(word)][key]
+    for key in words[word].keys():
+        tmp = words[word][key]
         try:
             if(key == "advmod"):
                 return True
-            elif(words[lem.lemmatize(tmp)]["pos_tag"] in (adverb + adjective)):
+            elif(words[tmp]["pos_tag"] in (adverb + adjective)):
                 return True
         except:
             continue
@@ -240,15 +236,15 @@ def getAdverbOrAdjective(words = {}, word=""):
 def getNounConnectedByAny(words={}, word=""):
     if (word=="" or len(words)==0):
         return None
-    for dep in words[lem.lemmatize(word)].keys():	
+    for dep in words[word].keys():	
         try:
-	    if (words[words[lem.lemmatize(word)][dep]]["pos_tag"] in noun):
-                return words[lem.lemmatize(word)][dep]
+	    if (words[words[word][dep]]["pos_tag"] in noun):
+                return words[word][dep]
 	except:
 		continue
 
 def isNoun(words={}, word=""):
-    return (words[lem.lemmatize(word)]["pos_tag"] in noun)
+    return (words[word]["pos_tag"] in noun)
 
 
 def wordInSentic(word = ""):
@@ -269,7 +265,7 @@ def isNounSubject(words = {}):
     if (len(words) == 0):
 	return None
     for word in words.keys():
-	if words[lem.lemmatize(word)].has_key("nsubj"):
+	if words[word].has_key("nsubj"):
 		print True, '0000000000000000000'
 		return True
     return False

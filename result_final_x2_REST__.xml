@@ -2,8 +2,8 @@
 	<sentence id="3510">
 		<text>I was here a few weeks back and we had the worst customer service experience at a restaurant ever.</text>
 		<aspectTerms>
-<aspectTerm term="wa" polarity="neutral" from="2" to="4"/>
-<aspectTerm term="experience" polarity="neutral" from="66" to="76"/>
+<aspectTerm term="was" polarity="neutral" from="2" to="5"/>
+<aspectTerm term="experience" polarity="positive" from="66" to="76"/>
 <aspectTerm term="restaurant" polarity="neutral" from="82" to="92"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
@@ -28,16 +28,16 @@
 		<aspectTerms>
 <aspectTerm term="it" polarity="neutral" from="31" to="33"/>
 <aspectTerm term="ended" polarity="neutral" from="111" to="116"/>
+<aspectTerm term="place" polarity="positive" from="95" to="100"/>
 <aspectTerm term="I" polarity="neutral" from="69" to="70"/>
 <aspectTerm term="glad" polarity="neutral" from="77" to="81"/>
 <aspectTerm term="it" polarity="neutral" from="31" to="33"/>
 <aspectTerm term="great" polarity="neutral" from="136" to="141"/>
-<aspectTerm term="place" polarity="positive" from="95" to="100"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="positive"/>
-<aspectCategory category="price" polarity="positive"/>
-<aspectCategory category="ambience" polarity="positive"/>
-<aspectCategory category="service" polarity="positive"/>
+<aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="price" polarity="neutral"/>
+<aspectCategory category="ambience" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="512">
 		<text>Took my mom for Mother's Day, and the maitre d' was pretty rude.</text>
@@ -83,7 +83,7 @@
 		<text>However, for what we spent, overall, it just was not up to par.</text>
 		<aspectTerms>
 <aspectTerm term="it" polarity="neutral" from="37" to="39"/>
-<aspectTerm term="wa" polarity="neutral" from="45" to="47"/>
+<aspectTerm term="was" polarity="neutral" from="45" to="48"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="ambiance" polarity="neutral"/>
@@ -91,13 +91,13 @@
 	<sentence id="959">
 		<text>The service was friendly and the atmosphere was casual.</text>
 		<aspectTerms>
+<aspectTerm term="atmosphere" polarity="positive" from="33" to="43"/>
 <aspectTerm term="service" polarity="neutral" from="4" to="11"/>
 <aspectTerm term="friendly" polarity="neutral" from="16" to="24"/>
-<aspectTerm term="atmosphere" polarity="positive" from="33" to="43"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="ambience" polarity="positive"/>
-<aspectCategory category="service" polarity="positive"/>
-<aspectCategory category="service" polarity="positive"/>
+<aspectCategory category="ambience" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="419">
 		<text>A friend from Seattle and I went on a Thursday night around 8:30.</text>
@@ -252,7 +252,7 @@
 		<text>From the street it looks very hidden, and is actually an old warehouse.</text>
 		<aspectTerms>
 <aspectTerm term="it" polarity="neutral" from="16" to="18"/>
-<aspectTerm term="look" polarity="neutral" from="19" to="23"/>
+<aspectTerm term="looks" polarity="neutral" from="19" to="24"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="ambience" polarity="neutral"/>
@@ -260,7 +260,7 @@
 	<sentence id="1156">
 		<text>Jimmy's is hands down the hottest night spot in the Bronx.</text>
 		<aspectTerms>
-<aspectTerm term="hand" polarity="positive" from="11" to="15"/>
+<aspectTerm term="hands" polarity="negative" from="11" to="16"/>
 <aspectTerm term="Jimmy" polarity="neutral" from="0" to="5"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="service" polarity="neutral"/>
@@ -310,7 +310,7 @@
 <aspectTerm term="noodles" polarity="neutral" from="58" to="65"/>
 <aspectTerm term="yummy" polarity="neutral" from="70" to="75"/>
 <aspectTerm term="calamari" polarity="negative" from="4" to="12"/>
-<aspectTerm term="come" polarity="neutral" from="13" to="17"/>
+<aspectTerm term="comes" polarity="neutral" from="13" to="18"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 </aspectCategories>	</sentence>
@@ -422,11 +422,12 @@
 	<sentence id="974">
 		<text>I've been to this restaurant more than a dozen times and when I'm craving for Pho, Lemon grass chicken or Beef Cube on rice, this is the place to go.</text>
 		<aspectTerms>
+<aspectTerm term="times" polarity="positive" from="47" to="52"/>
 <aspectTerm term="craving" polarity="negative" from="66" to="73"/>
 <aspectTerm term="place" polarity="negative" from="137" to="142"/>
-<aspectTerm term="time" polarity="negative" from="47" to="51"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="ambience" polarity="negative"/>
+<aspectCategory category="service" polarity="negative"/>
 </aspectCategories>	</sentence>
 	<sentence id="3089">
 		<text>Oh yes, and if you are a fan of Indian oldies film stars, there are plenty of portraits of Indian actors and actresses in classic black white that adorn the walls, some of which, I would love to know where they obtained.</text>
@@ -474,9 +475,9 @@
 	<sentence id="1426">
 		<text>This is also where I was from.</text>
 		<aspectTerms>
-<aspectTerm term="I" polarity="neutral" from="19" to="20"/>
-<aspectTerm term="wa" polarity="neutral" from="21" to="23"/>
 <aspectTerm term="is" polarity="neutral" from="2" to="4"/>
+<aspectTerm term="I" polarity="neutral" from="19" to="20"/>
+<aspectTerm term="was" polarity="neutral" from="21" to="24"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="price" polarity="neutral"/>
@@ -550,7 +551,7 @@
 		<text>The food is amazing, rich pastas and fresh doughy pizza.</text>
 		<aspectTerms>
 <aspectTerm term="food" polarity="positive" from="4" to="8"/>
-<aspectTerm term="pasta" polarity="positive" from="26" to="31"/>
+<aspectTerm term="pastas" polarity="positive" from="26" to="32"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="positive"/>
 </aspectCategories>	</sentence>
@@ -843,8 +844,8 @@
 	<sentence id="314">
 		<text>All I can say is $2 pints during happy hour and the some of the cheapest oysters you'll find in the city, though the quality is some of the best.</text>
 		<aspectTerms>
+<aspectTerm term="pints" polarity="positive" from="20" to="25"/>
 <aspectTerm term="quality" polarity="positive" from="117" to="124"/>
-<aspectTerm term="pint" polarity="positive" from="20" to="24"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="positive"/>
 <aspectCategory category="price" polarity="positive"/>
@@ -872,9 +873,9 @@
 	<sentence id="1590">
 		<text>I had a grat time at Jekyll and Hyde!</text>
 		<aspectTerms>
-<aspectTerm term="time" polarity="negative" from="13" to="17"/>
+<aspectTerm term="time" polarity="neutral" from="13" to="17"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="ambience" polarity="negative"/>
+<aspectCategory category="ambience" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="2701">
 		<text>Service here was great, food was fantastic.</text>
@@ -981,7 +982,9 @@
 	<sentence id="2252">
 		<text>They do cater to American palates, but if you like it hot let them know and they are more than willing to oblige!</text>
 		<aspectTerms>
+<aspectTerm term="oblige" polarity="neutral" from="106" to="112"/>
 </aspectTerms>		<aspectCategories>
+<aspectCategory category="price" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="3679">
 		<text>I loved this place!!</text>
@@ -1016,7 +1019,7 @@
 	<sentence id="3652">
 		<text>Avoid at all costs.</text>
 		<aspectTerms>
-<aspectTerm term="cost" polarity="positive" from="13" to="17"/>
+<aspectTerm term="costs" polarity="positive" from="13" to="18"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="monetary_value" polarity="positive"/>
 </aspectCategories>	</sentence>
@@ -1043,7 +1046,7 @@
 		<text>The garlic mashed potatoes are hands down the best in the city!</text>
 		<aspectTerms>
 <aspectTerm term="potatoes" polarity="neutral" from="18" to="26"/>
-<aspectTerm term="hand" polarity="neutral" from="31" to="35"/>
+<aspectTerm term="hands" polarity="neutral" from="31" to="36"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="service" polarity="neutral"/>
@@ -1059,7 +1062,7 @@
 		<text>great for a romantic evening, or a fun evening with friends...</text>
 		<aspectTerms>
 <aspectTerm term="evening" polarity="neutral" from="21" to="28"/>
-<aspectTerm term="friend" polarity="neutral" from="52" to="58"/>
+<aspectTerm term="friends" polarity="neutral" from="52" to="59"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="service" polarity="neutral"/>
@@ -1107,12 +1110,12 @@
 	<sentence id="885">
 		<text>While this is a pretty place in that overly cute French way, the food was insultingly horrible.</text>
 		<aspectTerms>
+<aspectTerm term="place" polarity="positive" from="23" to="28"/>
 <aspectTerm term="food" polarity="positive" from="65" to="69"/>
 <aspectTerm term="horrible" polarity="neutral" from="86" to="94"/>
-<aspectTerm term="place" polarity="positive" from="23" to="28"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="positive"/>
-<aspectCategory category="ambience" polarity="positive"/>
+<aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="ambience" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="1428">
 		<text>I went there for lunch and it was not as good as I expected from the reviews I read.</text>
@@ -1247,22 +1250,22 @@
 	<sentence id="468">
 		<text>Restaurant snobs need not bother, this is a small, neighborhood kind of place.</text>
 		<aspectTerms>
-<aspectTerm term="kind" polarity="positive" from="64" to="68"/>
 <aspectTerm term="snobs" polarity="neutral" from="11" to="16"/>
 <aspectTerm term="need" polarity="neutral" from="17" to="21"/>
+<aspectTerm term="kind" polarity="positive" from="64" to="68"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="neutral"/>
-<aspectCategory category="ambience" polarity="neutral"/>
-<aspectCategory category="service" polarity="neutral"/>
+<aspectCategory category="food" polarity="positive"/>
+<aspectCategory category="ambience" polarity="positive"/>
+<aspectCategory category="service" polarity="positive"/>
 </aspectCategories>	</sentence>
 	<sentence id="2876">
 		<text>Have been dozens of times and never failed to enjoy the experience.</text>
 		<aspectTerms>
 <aspectTerm term="experience" polarity="positive" from="56" to="66"/>
-<aspectTerm term="time" polarity="neutral" from="20" to="24"/>
+<aspectTerm term="times" polarity="neutral" from="20" to="25"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
-<aspectCategory category="ambience" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="2655">
 		<text>They couldn't even make a salad that was appealing.</text>
@@ -1272,7 +1275,7 @@
 	<sentence id="3570">
 		<text>For two people with tip was less than $25 bucks.</text>
 		<aspectTerms>
-<aspectTerm term="buck" polarity="positive" from="42" to="46"/>
+<aspectTerm term="bucks" polarity="positive" from="42" to="47"/>
 <aspectTerm term="people" polarity="neutral" from="8" to="14"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="service" polarity="neutral"/>
@@ -1410,10 +1413,9 @@
 		<text>after dining at B.O.G over twenty times now, its official !</text>
 		<aspectTerms>
 <aspectTerm term="official" polarity="positive" from="49" to="57"/>
-<aspectTerm term="time" polarity="negative" from="34" to="38"/>
+<aspectTerm term="times" polarity="negative" from="34" to="39"/>
 <aspectTerm term="B.O.G" polarity="positive" from="16" to="21"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="ambience" polarity="positive"/>
 <aspectCategory category="service" polarity="positive"/>
 </aspectCategories>	</sentence>
 	<sentence id="2399">
@@ -1670,7 +1672,7 @@
 		<text>During the course of the past 3 months, the chef and staff changed and it was not for the better.</text>
 		<aspectTerms>
 <aspectTerm term="it" polarity="neutral" from="71" to="73"/>
-<aspectTerm term="wa" polarity="neutral" from="74" to="76"/>
+<aspectTerm term="was" polarity="neutral" from="74" to="77"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="ambiance" polarity="neutral"/>
@@ -1756,9 +1758,9 @@
 	<sentence id="72">
 		<text>It is one the nicest outdoor restaurants I have ever seen in NY--I am from Italy and this place rivals the ones in my country.</text>
 		<aspectTerms>
-<aspectTerm term="restaurant" polarity="neutral" from="29" to="39"/>
+<aspectTerm term="restaurants" polarity="negative" from="29" to="40"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="service" polarity="neutral"/>
+<aspectCategory category="service" polarity="negative"/>
 </aspectCategories>	</sentence>
 	<sentence id="3666">
 		<text>Yes you have to wait to be seated and because its small there is no waiting area and the seat at the bar was all taken.</text>
@@ -1785,7 +1787,9 @@
 		<text>This place has the best Chinese style BBQ ribs in the city.</text>
 		<aspectTerms>
 <aspectTerm term="style" polarity="positive" from="32" to="37"/>
+<aspectTerm term="ribs" polarity="positive" from="42" to="46"/>
 </aspectTerms>		<aspectCategories>
+<aspectCategory category="food" polarity="positive"/>
 <aspectCategory category="price" polarity="positive"/>
 </aspectCategories>	</sentence>
 	<sentence id="2051">
@@ -1939,7 +1943,7 @@
 <aspectTerm term="food" polarity="positive" from="38" to="42"/>
 <aspectTerm term="atmosphere" polarity="positive" from="60" to="70"/>
 <aspectTerm term="staff" polarity="positive" from="4" to="9"/>
-<aspectTerm term="make" polarity="neutral" from="10" to="14"/>
+<aspectTerm term="makes" polarity="neutral" from="10" to="15"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="ambience" polarity="neutral"/>
@@ -2252,7 +2256,9 @@
 		<text>I would not have been so disappointed with the portions if the qualities were good enough to make up for it, but they were not!</text>
 		<aspectTerms>
 <aspectTerm term="qualities" polarity="neutral" from="63" to="72"/>
+<aspectTerm term="make" polarity="neutral" from="93" to="97"/>
 </aspectTerms>		<aspectCategories>
+<aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="price" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="1297">
@@ -2267,8 +2273,10 @@
 		<text>I'm happy to have Nosh in the neighborhood and the food is very comforting.</text>
 		<aspectTerms>
 <aspectTerm term="food" polarity="positive" from="51" to="55"/>
+<aspectTerm term="have" polarity="neutral" from="13" to="17"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="positive"/>
+<aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="1162">
 		<text>Good atmosphere, combination of all the hottest music dress code is relatively strict except on Fridays.</text>
@@ -2282,8 +2290,8 @@
 	<sentence id="411">
 		<text>They kindly brought us more to see if it was better, but it was not!</text>
 		<aspectTerms>
-<aspectTerm term="wa" polarity="neutral" from="41" to="43"/>
 <aspectTerm term="brought" polarity="neutral" from="12" to="19"/>
+<aspectTerm term="was" polarity="neutral" from="41" to="44"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="price" polarity="neutral"/>
 <aspectCategory category="ambiance" polarity="neutral"/>
@@ -2554,7 +2562,7 @@
 	<sentence id="527">
 		<text>Great spot, whether looking for a couple of drinks or quiet dinner.</text>
 		<aspectTerms>
-<aspectTerm term="drink" polarity="positive" from="44" to="49"/>
+<aspectTerm term="drinks" polarity="positive" from="44" to="50"/>
 <aspectTerm term="couple" polarity="positive" from="34" to="40"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="positive"/>
@@ -2563,7 +2571,7 @@
 	<sentence id="2478">
 		<text>Just stick with the small dishes!</text>
 		<aspectTerms>
-<aspectTerm term="dish" polarity="negative" from="26" to="30"/>
+<aspectTerm term="dishes" polarity="negative" from="26" to="32"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="service" polarity="negative"/>
 </aspectCategories>	</sentence>
@@ -2617,7 +2625,9 @@
 	<sentence id="413">
 		<text>We were sorry to check them off our list as we had enjoyed and recommended the place in the past.</text>
 		<aspectTerms>
+<aspectTerm term="check" polarity="neutral" from="17" to="22"/>
 </aspectTerms>		<aspectCategories>
+<aspectCategory category="serve" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="2281">
 		<text>If you're not familiar with the cuisine, you may encounter problems ordering here and be sure to bring plenty of cash with you as they don't accept credit cards.</text>
@@ -2693,7 +2703,7 @@
 		<text>I highly recommend Caviar Russe to anyone who wants delicious top grade caviar and fantastic service.</text>
 		<aspectTerms>
 <aspectTerm term="who" polarity="neutral" from="42" to="45"/>
-<aspectTerm term="want" polarity="neutral" from="46" to="50"/>
+<aspectTerm term="wants" polarity="neutral" from="46" to="51"/>
 <aspectTerm term="Russe" polarity="neutral" from="26" to="31"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="ambience" polarity="neutral"/>
@@ -2855,12 +2865,12 @@
 	<sentence id="3017">
 		<text>I am a 100 lb girl, had a glass of wine and a glass of beer prior to the dinner, and I was still HUNGRY after my visit to this place!</text>
 		<aspectTerms>
+<aspectTerm term="girl" polarity="negative" from="14" to="18"/>
 <aspectTerm term="I" polarity="neutral" from="0" to="1"/>
 <aspectTerm term="HUNGRY" polarity="neutral" from="97" to="103"/>
-<aspectTerm term="girl" polarity="negative" from="14" to="18"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="negative"/>
-<aspectCategory category="service" polarity="negative"/>
+<aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="1366">
 		<text>The drinks are a saving grace, but service staff, please, get over yourselves.</text>
@@ -2986,7 +2996,7 @@
 	<sentence id="3071">
 		<text>Cozy romantic atomosphere with only around 15 tables at most.</text>
 		<aspectTerms>
-<aspectTerm term="table" polarity="negative" from="46" to="51"/>
+<aspectTerm term="tables" polarity="negative" from="46" to="52"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="negative"/>
 </aspectCategories>	</sentence>
@@ -3003,7 +3013,7 @@
 		<text>I really like both the scallops and the mahi mahi (on saffron risotto-yum!).</text>
 		<aspectTerms>
 <aspectTerm term="risotto-yum" polarity="negative" from="62" to="73"/>
-<aspectTerm term="scallop" polarity="negative" from="23" to="30"/>
+<aspectTerm term="scallops" polarity="negative" from="23" to="31"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="negative"/>
 </aspectCategories>	</sentence>
@@ -3089,14 +3099,14 @@
 		<text>Complimentary stuff kept coming, and when the waiter saw me opening a gift, I received my dessert on a plate that had Happy Birthday written on it, with a candlevery nice touch, and attentive staff.</text>
 		<aspectTerms>
 <aspectTerm term="Birthday" polarity="positive" from="124" to="132"/>
-<aspectTerm term="dessert" polarity="positive" from="90" to="97"/>
 <aspectTerm term="waiter" polarity="negative" from="46" to="52"/>
 <aspectTerm term="saw" polarity="neutral" from="53" to="56"/>
 <aspectTerm term="gift" polarity="neutral" from="70" to="74"/>
+<aspectTerm term="dessert" polarity="positive" from="90" to="97"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="neutral"/>
-<aspectCategory category="price" polarity="neutral"/>
-<aspectCategory category="service" polarity="neutral"/>
+<aspectCategory category="food" polarity="positive"/>
+<aspectCategory category="price" polarity="positive"/>
+<aspectCategory category="service" polarity="positive"/>
 </aspectCategories>	</sentence>
 	<sentence id="418">
 		<text>The food arrived 20 minutes after I called, cold and soggy.</text>
@@ -3173,9 +3183,9 @@
 	<sentence id="2712">
 		<text>I have been about 4 times and have always had a great meal.</text>
 		<aspectTerms>
-<aspectTerm term="time" polarity="negative" from="20" to="24"/>
+<aspectTerm term="times" polarity="neutral" from="20" to="25"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="ambience" polarity="negative"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="1170">
 		<text>I go back in line like three times on average until I can't walk anymore.</text>
@@ -3223,9 +3233,9 @@
 	<sentence id="1326">
 		<text>They treated us well and the food was extremely fresh and well-prepared.</text>
 		<aspectTerms>
+<aspectTerm term="treated" polarity="neutral" from="5" to="12"/>
 <aspectTerm term="food" polarity="positive" from="29" to="33"/>
 <aspectTerm term="fresh" polarity="neutral" from="48" to="53"/>
-<aspectTerm term="treated" polarity="neutral" from="5" to="12"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="price" polarity="neutral"/>
@@ -3233,7 +3243,7 @@
 	<sentence id="2400">
 		<text>Their exotic salad is basic ly a delcious little green salad with a peanut sauce that is perfect before their sweet basil fried tofu.</text>
 		<aspectTerms>
-<aspectTerm term="salad" polarity="negative" from="13" to="18"/>
+<aspectTerm term="salad" polarity="neutral" from="13" to="18"/>
 <aspectTerm term="basic" polarity="neutral" from="22" to="27"/>
 <aspectTerm term="tofu" polarity="neutral" from="128" to="132"/>
 </aspectTerms>		<aspectCategories>
@@ -3267,8 +3277,10 @@
 		<text>The food came out wrong, the waiter was no where to be found and the wine showed up at the end of the meal.</text>
 		<aspectTerms>
 <aspectTerm term="waiter" polarity="negative" from="29" to="35"/>
+<aspectTerm term="found" polarity="neutral" from="55" to="60"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="service" polarity="negative"/>
+<aspectCategory category="price" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="2492">
 		<text>The chicken and steak were seasoned and cooked to perfection, and the lamb sandwhich is great for heartier appetites.</text>
@@ -3307,7 +3319,7 @@
 		<text>The food was great and the service was even better.</text>
 		<aspectTerms>
 <aspectTerm term="food" polarity="positive" from="4" to="8"/>
-<aspectTerm term="wa" polarity="neutral" from="9" to="11"/>
+<aspectTerm term="was" polarity="neutral" from="9" to="12"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="ambiance" polarity="neutral"/>
@@ -3451,9 +3463,9 @@
 <aspectTerm term="GREAT" polarity="neutral" from="89" to="94"/>
 <aspectTerm term="it" polarity="neutral" from="13" to="15"/>
 <aspectTerm term="cheap" polarity="neutral" from="18" to="23"/>
-<aspectTerm term="food" polarity="positive" from="68" to="72"/>
 <aspectTerm term="portions" polarity="neutral" from="42" to="50"/>
 <aspectTerm term="small" polarity="neutral" from="55" to="60"/>
+<aspectTerm term="food" polarity="positive" from="68" to="72"/>
 <aspectTerm term="NOT" polarity="neutral" from="29" to="32"/>
 <aspectTerm term="mean" polarity="neutral" from="33" to="37"/>
 </aspectTerms>		<aspectCategories>
@@ -3511,10 +3523,10 @@
 	<sentence id="3362">
 		<text>Kenny the owner is always there and he treats my family like we are part of his family.</text>
 		<aspectTerms>
+<aspectTerm term="family" polarity="positive" from="49" to="55"/>
 <aspectTerm term="Kenny" polarity="positive" from="0" to="5"/>
 <aspectTerm term="is" polarity="neutral" from="16" to="18"/>
 <aspectTerm term="part" polarity="positive" from="68" to="72"/>
-<aspectTerm term="family" polarity="positive" from="49" to="55"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="price" polarity="positive"/>
 <aspectCategory category="service" polarity="positive"/>
@@ -3548,19 +3560,19 @@
 	<sentence id="3046">
 		<text>Judging from previous posts this used to be a good place, but not any longer.</text>
 		<aspectTerms>
-<aspectTerm term="post" polarity="positive" from="22" to="26"/>
+<aspectTerm term="posts" polarity="positive" from="22" to="27"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="service" polarity="positive"/>
 </aspectCategories>	</sentence>
 	<sentence id="1398">
 		<text>Delicious food, excellent service, and a pretty atmosphere make this a great choice for dinner and the $5.99 lunch buffet makes it an even better choice for lunch!</text>
 		<aspectTerms>
-<aspectTerm term="lunch" polarity="neutral" from="109" to="114"/>
 <aspectTerm term="it" polarity="neutral" from="128" to="130"/>
 <aspectTerm term="choice" polarity="positive" from="77" to="83"/>
+<aspectTerm term="lunch" polarity="neutral" from="109" to="114"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="positive"/>
-<aspectCategory category="service" polarity="positive"/>
+<aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="2406">
 		<text>For appetizers, I recommend the shrimp fritters and dumplings.</text>
@@ -3651,7 +3663,8 @@
 	<sentence id="1093">
 		<text>We try frequenting new restaurants all over the city, but any time that we  visit a restaurant other than Roth's we are always disappointed.</text>
 		<aspectTerms>
-<aspectTerm term="restaurant" polarity="positive" from="23" to="33"/>
+<aspectTerm term="restaurant" polarity="neutral" from="23" to="33"/>
+<aspectTerm term="Roth" polarity="neutral" from="106" to="110"/>
 <aspectTerm term="city" polarity="positive" from="48" to="52"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="ambiance" polarity="positive"/>
@@ -3684,14 +3697,14 @@
 	<sentence id="1423">
 		<text>What makes this restaurant special are the authentic sichuan cooking and being the only one in NYC that offers authentic chongqing hotpot.</text>
 		<aspectTerms>
-<aspectTerm term="hotpot" polarity="neutral" from="131" to="137"/>
-<aspectTerm term="restaurant" polarity="positive" from="16" to="26"/>
 <aspectTerm term="special" polarity="neutral" from="27" to="34"/>
 <aspectTerm term="cooking" polarity="negative" from="61" to="68"/>
+<aspectTerm term="restaurant" polarity="positive" from="16" to="26"/>
+<aspectTerm term="hotpot" polarity="neutral" from="131" to="137"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="food" polarity="negative"/>
-<aspectCategory category="overhaul" polarity="negative"/>
-<aspectCategory category="service" polarity="negative"/>
+<aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="overhaul" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="1047">
 		<text>Mizu is the Japenese find in Grammercy.</text>
@@ -3730,7 +3743,7 @@
 	<sentence id="3258">
 		<text>One of my favorite restaurants in the neighborhood.</text>
 		<aspectTerms>
-<aspectTerm term="restaurant" polarity="positive" from="19" to="29"/>
+<aspectTerm term="restaurants" polarity="positive" from="19" to="30"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="service" polarity="positive"/>
 </aspectCategories>	</sentence>
@@ -3833,9 +3846,9 @@
 	<sentence id="2526">
 		<text>Deliveries often take up to an hour and the prices are higher than most other pizzerias in the area.</text>
 		<aspectTerms>
-<aspectTerm term="prices" polarity="neutral" from="44" to="50"/>
 <aspectTerm term="Deliveries" polarity="neutral" from="0" to="10"/>
 <aspectTerm term="take" polarity="neutral" from="17" to="21"/>
+<aspectTerm term="prices" polarity="neutral" from="44" to="50"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="monetary_value" polarity="neutral"/>
 <aspectCategory category="service" polarity="neutral"/>
@@ -3899,8 +3912,8 @@
 	<sentence id="1466">
 		<text>strike up a conversation with the attorney next to you, or with the local union worker on the other side.</text>
 		<aspectTerms>
-<aspectTerm term="side" polarity="positive" from="100" to="104"/>
 <aspectTerm term="attorney" polarity="positive" from="34" to="42"/>
+<aspectTerm term="side" polarity="positive" from="100" to="104"/>
 <aspectTerm term="conversation" polarity="positive" from="12" to="24"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="positive"/>
@@ -3985,7 +3998,7 @@
 	<sentence id="2096">
 		<text>Very different than regular dimsum places.</text>
 		<aspectTerms>
-<aspectTerm term="place" polarity="positive" from="35" to="40"/>
+<aspectTerm term="places" polarity="positive" from="35" to="41"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="ambience" polarity="positive"/>
 </aspectCategories>	</sentence>
@@ -4220,7 +4233,7 @@
 		<text>Interior was so so.</text>
 		<aspectTerms>
 <aspectTerm term="Interior" polarity="neutral" from="0" to="8"/>
-<aspectTerm term="wa" polarity="neutral" from="9" to="11"/>
+<aspectTerm term="was" polarity="neutral" from="9" to="12"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="ambiance" polarity="neutral"/>
 </aspectCategories>	</sentence>
@@ -4243,15 +4256,17 @@
 	<sentence id="2937">
 		<text>they were able to squeeze me in at 6 after i called the night before my anniversary for a friday night reservation and told me they'd treat us well for the occasion.</text>
 		<aspectTerms>
+<aspectTerm term="squeeze" polarity="neutral" from="18" to="25"/>
 <aspectTerm term="treat" polarity="neutral" from="134" to="139"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="333">
 		<text>Boy was I wrong!</text>
 		<aspectTerms>
 <aspectTerm term="Boy" polarity="neutral" from="0" to="3"/>
-<aspectTerm term="wa" polarity="neutral" from="4" to="6"/>
+<aspectTerm term="was" polarity="neutral" from="4" to="7"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="ambiance" polarity="neutral"/>
 <aspectCategory category="service" polarity="neutral"/>
@@ -4279,10 +4294,10 @@
 	<sentence id="608">
 		<text>When we walked in it seemed like it was there for 200 years.</text>
 		<aspectTerms>
-<aspectTerm term="it" polarity="neutral" from="18" to="20"/>
-<aspectTerm term="wa" polarity="neutral" from="8" to="10"/>
 <aspectTerm term="we" polarity="neutral" from="5" to="7"/>
 <aspectTerm term="walked" polarity="neutral" from="8" to="14"/>
+<aspectTerm term="it" polarity="neutral" from="18" to="20"/>
+<aspectTerm term="was" polarity="neutral" from="36" to="39"/>
 </aspectTerms>		<aspectCategories>
 <aspectCategory category="food" polarity="neutral"/>
 <aspectCategory category="price" polarity="neutral"/>
@@ -4343,7 +4358,9 @@
 	<sentence id="777">
 		<text>From the appetizers we ate, the dim sum and other variety of foods, it was impossible to criticize the food.</text>
 		<aspectTerms>
+<aspectTerm term="criticize" polarity="neutral" from="89" to="98"/>
 </aspectTerms>		<aspectCategories>
+<aspectCategory category="price" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="875">
 		<text>When we arrived at 6:00 PM, the restaurant was practically empty.</text>
@@ -4359,10 +4376,10 @@
 	<sentence id="671">
 		<text>Each table has a pot of boiling water sunken into its surface, and you get platters of thin sliced meats, various vegetables, and rice and glass noodles.</text>
 		<aspectTerms>
-<aspectTerm term="platters" polarity="neutral" from="75" to="83"/>
 <aspectTerm term="pot" polarity="negative" from="17" to="20"/>
+<aspectTerm term="platters" polarity="neutral" from="75" to="83"/>
 </aspectTerms>		<aspectCategories>
-<aspectCategory category="service" polarity="negative"/>
+<aspectCategory category="service" polarity="neutral"/>
 </aspectCategories>	</sentence>
 	<sentence id="617">
 		<text>I am going to the mid town location next.</text>

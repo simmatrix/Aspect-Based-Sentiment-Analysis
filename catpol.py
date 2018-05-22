@@ -1,9 +1,6 @@
 import pickle
 import a
 import sys
-from nltk.stem.wordnet import WordNetLemmatizer
-
-lem=WordNetLemmatizer()
 
 sentic=pickle.load(open('sentic_dump.p','rb'))			#sentnic dictionary
 sentence=pickle.load(open('sentence_dump.p','rb'))		#parser output dictionary
@@ -29,8 +26,8 @@ def extractor(words = {}, sid=0):				#sid = sentence id, and words = aspect term
 		p='neutral'
 		# print j
 		print polarit[sid]
-		if lem.lemmatize(j) in polarit[sid].keys():						#j is the aspect term 
-	 		p= polarit[sid][lem.lemmatize(j)]#,'adfaaafadfasdf'
+		if j in polarit[sid].keys():						#j is the aspect term 
+	 		p= polarit[sid][j]#,'adfaaafadfasdf'
 	 	if j in polarit[sid].keys():
 	 		p= polarit[sid][j]
 	 #   print p

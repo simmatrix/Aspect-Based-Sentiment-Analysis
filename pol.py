@@ -1,9 +1,7 @@
 import pickle
 import a
 import sys
-from nltk.stem.wordnet import WordNetLemmatizer
 
-lem=WordNetLemmatizer()
 sentic=pickle.load(open('sentic_dump.p','rb'))			#sentnic dictionary
 sentence=pickle.load(open('sentence_dump.p','rb'))		#parser output dictionary
 sentword=pickle.load(open('sentiword_dump.p','rb'))		#sentiwordnet dictionary
@@ -26,9 +24,9 @@ def extractor(words = {}, sid=0):				#sid = sentence id, and words = aspect term
 	    print j						#j is the aspect term
 	    flag=0
 	    print sid,j
-	    p =  sentence[sid][lem.lemmatize(j)]				#parser lo nunchi aa aspect term theeskuntam, from that sid
+	    p =  sentence[sid][j]				#parser lo nunchi aa aspect term theeskuntam, from that sid
 	#    print p
-	    if sentence[sid][lem.lemmatize(j)]['pos_tag'] in noun:		#then if aspect term is noun go inside
+	    if sentence[sid][j]['pos_tag'] in noun:		#then if aspect term is noun go inside
 		#print 'yipppeeeeeee'
 		for i in p:					#iterate through its values
 		    if i != 'pos_tag':				#if key is not 'pos_tag' go inside
